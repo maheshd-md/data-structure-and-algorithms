@@ -2,6 +2,11 @@ package com.ds.stack;
 
 import java.util.ArrayList;
 
+/**
+ * @author Mahesh D (dhavalshankh.md@gmail.com)
+ *
+ * @param <T>
+ */
 public class MyStack<T> {
 
 	private ArrayList<T> arr;

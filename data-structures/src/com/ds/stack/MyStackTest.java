@@ -1,5 +1,9 @@
 package com.ds.stack;
 
+/**
+ * @author Mahesh D (dhavalshankh.md@gmail.com)
+ *
+ */
 public class MyStackTest {
 
 	public static void main(String[] args) {

@@ -1,5 +1,9 @@
 package com.ds.queue;
 
+/**
+ * @author Mahesh D (dhavalshankh.md@gmail.com)
+ *
+ */
 public class MyQueueTest {
 
 	public static void main(String[] args) {

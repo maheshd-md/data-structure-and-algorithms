@@ -3,12 +3,18 @@ package com.ds.queue;
 import java.util.ArrayList;
 import java.util.Collections;
 
-/*
- * *********************************************************************************
- * 		Enqueue -------> front |	|	|	|	|	|	| rear ---------> Dequeue
- * *********************************************************************************
+/**
+ * @author Mahesh D (dhavalshankh.md@gmail.com)
+ *
+ * @param <T>
  */
 public class MyQueue<T> {
+
+	/*
+	 * *********************************************************************************
+	 * 		Enqueue -------> front |	|	|	|	|	|	| rear ---------> Dequeue
+	 * *********************************************************************************
+	 */
 
 	private ArrayList<T> arr;
 	private int size;

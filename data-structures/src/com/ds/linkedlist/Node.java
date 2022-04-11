@@ -1,5 +1,10 @@
 package com.ds.linkedlist;
 
+/**
+ * @author Mahesh D (dhavalshankh.md@gmail.com)
+ *
+ * @param <T>
+ */
 public class Node<T> {
 
 	int index;
