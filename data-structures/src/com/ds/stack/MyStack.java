@@ -26,7 +26,10 @@ public class MyStack<T> {
 	// Pop method to return and remove the top element from the stack
 	public T pop() {
 		if(top >= 0) {
-			return this.arr.get(top--);
+			T element = this.arr.get(top);
+			this.arr.remove(top);
+			top--;
+			return element;
 		} else {
 			System.out.println("Stack Underflow!!!");
 			return null;
