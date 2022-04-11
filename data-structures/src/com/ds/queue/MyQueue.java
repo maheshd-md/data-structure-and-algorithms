@@ -32,21 +32,24 @@ public class MyQueue<T> {
 			front++;
 			this.arr.add(front, data);
 		}
+		size++;
 	}
 
 	// Dequeue method to remove the element from the queue
 	public T dequeue() {
+		T element;
 		if (rear == -1) {
 			System.out.println("Queue is empty");
 			return null;
 		} else if (front == rear) {
-			T element = this.arr.get(rear);
+			element = this.arr.get(rear);
 			front = -1;
 			rear = -1;
-			return element;
 		} else {
-			return this.arr.get(rear++);
+			element = this.arr.get(rear++);
 		}
+		size--;
+		return element;
 	}
 
 	// Front method to return the front element but does not remove it
@@ -67,6 +70,10 @@ public class MyQueue<T> {
 		} else {
 			return this.arr.get(rear);
 		}
+	}
+	
+	public int size() {
+		return size;
 	}
 
 	@Override
