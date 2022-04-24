@@ -7,7 +7,7 @@ package com.algo.searching;
  * @author Mahesh
  *
  */
-public class BinarySearchInInSortedAndRotatedArray {
+public class BinarySearchInSortedAndRotatedArray {
 
 	/**
 	 * @param args
