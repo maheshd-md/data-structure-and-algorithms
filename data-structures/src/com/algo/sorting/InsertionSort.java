@@ -6,7 +6,7 @@ package com.algo.sorting;
 import java.util.Arrays;
 
 /**
- * @author Mahesh
+ * @author Mahesh D (dhavalshankh.md@gmail.com)
  *
  */
 public class InsertionSort {
@@ -28,12 +28,22 @@ public class InsertionSort {
 		int length = arr.length;
 		for(int i=1; i<length; i++) {
 			int temp = arr[i];
-			int j = i-1;
-			while(j>=0 && temp < arr[j]) {
-					arr[j+1] = arr[j];
-					j--;
+//			int j = i-1;
+//			while(j>=0 && temp < arr[j]) {
+//					arr[j+1] = arr[j];
+//					j--;
+//			}
+//			arr[j+1] = temp;
+			
+			int j;
+			for (j = i - 1; j >= 0; j--) {
+				if (temp < arr[j]) {
+					arr[j + 1] = arr[j];
+				} else {
+					break;
+				}
 			}
-			arr[j+1] = temp;
+			arr[j + 1] = temp;
 		}
 	}
 

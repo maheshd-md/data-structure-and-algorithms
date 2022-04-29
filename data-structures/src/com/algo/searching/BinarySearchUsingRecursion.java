@@ -4,7 +4,7 @@
 package com.algo.searching;
 
 /**
- * @author Mahesh
+ * @author Mahesh D (dhavalshankh.md@gmail.com)
  *
  */
 public class BinarySearchUsingRecursion {

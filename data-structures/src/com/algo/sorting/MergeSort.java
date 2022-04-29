@@ -6,7 +6,7 @@ package com.algo.sorting;
 import java.util.Arrays;
 
 /**
- * @author Mahesh
+ * @author Mahesh D (dhavalshankh.md@gmail.com)
  *
  */
 public class MergeSort {
