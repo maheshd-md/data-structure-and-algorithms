@@ -5,7 +5,7 @@ package com.algo.sorting;
 
 import java.util.Arrays;
 
-/**
+/**  
  * @author Mahesh D (dhavalshankh.md@gmail.com)
  *
  */
@@ -17,15 +17,8 @@ public class MergeSort {
 	public static void main(String[] args) {
 		int[] arr = new int[] { 3, 5, 4, 9, 1, 10, 100, 50, 45, 65, 33, 51, 11, 12, 2, 1, -7, 1000 };
 		System.out.println("Unsorted Array: " + Arrays.toString(arr));
-		mergeSort(arr);
-		System.out.println("Sorted Array: " + Arrays.toString(arr));
-	}
-
-	/**
-	 * @param arr
-	 */
-	private static void mergeSort(int[] arr) {
 		divide(arr, 0, arr.length - 1);
+		System.out.println("Sorted Array: " + Arrays.toString(arr));
 	}
 
 	/**
