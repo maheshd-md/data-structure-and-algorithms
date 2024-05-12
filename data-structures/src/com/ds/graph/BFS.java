@@ -1,28 +1,29 @@
 package com.ds.graph;
 
-import com.ds.graph.Edge;
-import com.ds.graph.Graph;
-import com.ds.graph.Vertex;
-
 import java.util.*;
 
 public class BFS {
 
-    public static void printBFS(Graph graph) {
+    public static void printBFS(Graph graph, String start) {
         if(null != graph && !graph.vertices.isEmpty()) {
-            Queue<Vertex> queue = new LinkedList<>();
-            Set<Vertex> visited = new HashSet<>();
-            queue.add(graph.vertices.get(0));
+            Queue<String> queue = new LinkedList<>();
+            Set<String> visited = new HashSet<>();
+            queue.add(start);
             while(!queue.isEmpty()) {
-                Vertex currVertex = queue.remove();
-                System.out.print(currVertex.data + ", ");
-                visited.add(currVertex);
-                for(Edge edge : currVertex.edges) {
-                    if(!visited.contains(edge.endVertex)) {
-                        queue.add(edge.endVertex);
+                String curr = queue.remove();
+                if(!visited.contains(curr)) {
+                    System.out.print(curr);
+                    visited.add(curr);
+                    for(Edge edge : graph.vertices.get(curr)) {
+                        queue.add(edge.end);
                     }
                 }
             }
         }
+    }
+
+    public static void printBFSRecursive(Graph graph, String start, Set<String> visited) {
+        // BFS can't be implemented using recursion
+        System.out.println("BFS can't be implemented using recursion");
     }
 }

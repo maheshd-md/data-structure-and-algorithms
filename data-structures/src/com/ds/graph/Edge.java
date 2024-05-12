@@ -2,12 +2,11 @@ package com.ds.graph;
 
 public class Edge {
 
-    public Vertex startVertex;
-    public Vertex endVertex;
-
+    public String end;
     public int wight;
 
-    public Edge(int weight) {
+    public Edge(String end, int weight) {
+        this.end = end;
         this.wight = weight;
     }
 }
