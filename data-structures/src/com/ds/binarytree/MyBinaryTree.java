@@ -32,7 +32,8 @@ public class MyBinaryTree {
 		node.right = buildTree(dataArr);
 		return node;
 	}
-	
+
+	// Preorder - print root node first, then left node, then right node
 	public String preOrderTraverse(Node node) {
 		if(null == node) {
 			return "";
@@ -42,7 +43,8 @@ public class MyBinaryTree {
 		preOrderTraverse(node.right);
 		return preOrderTraversal;
 	}
-	
+
+	// Inorder - print root node in the middle of left and right
 	public String inOrderTraverse(Node node) {
 		if(null == node) {
 			return "";
@@ -52,7 +54,8 @@ public class MyBinaryTree {
 		inOrderTraverse(node.right);
 		return inOrderTraversal;
 	}
-	
+
+	// Post order - print root node after left and right node
 	public String postOrderTraverse(Node node) {
 		if(null == node) {
 			return "";
