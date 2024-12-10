@@ -16,7 +16,7 @@ public class MyBinaryTree {
 
 	/**
 	 * If dataArr[index] = +ve number, it means there is a node and add it to the
-	 * tree, if it dataArr[index] = -1, there is node.
+	 * tree, if it dataArr[index] = -1, there is no node.
 	 * 
 	 * @param dataArr
 	 * @return
