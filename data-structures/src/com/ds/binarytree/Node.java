@@ -1,5 +1,5 @@
 /**
- * 
+ *
  */
 package com.ds.binarytree;
 
@@ -9,11 +9,11 @@ package com.ds.binarytree;
  */
 public class Node {
 
-	int data;
-	Node left;
-	Node right;
-	
-	public Node(int data) {
-		this.data = data;
-	}
+    int data;
+    Node left;
+    Node right;
+
+    public Node(int data) {
+        this.data = data;
+    }
 }

@@ -3,3 +3,5 @@
 data-structures/.project
 *.class
 data-structures/.classpath
+/.idea
+data-structures/.DS_Store

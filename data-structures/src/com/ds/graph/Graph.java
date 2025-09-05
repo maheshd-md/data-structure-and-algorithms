@@ -15,12 +15,12 @@ public class Graph {
     }
 
     public void addEdge(String start, String end, int weight) {
-        if(!isWeighted) {
+        if (!isWeighted) {
             weight = 0;
         }
         this.vertices.putIfAbsent(start, new ArrayList<>());
         this.vertices.get(start).add(new Edge(end, weight));
-        if(!isDirected) {
+        if (!isDirected) {
             this.vertices.putIfAbsent(end, new ArrayList<>());
             this.vertices.get(end).add(new Edge(start, weight));
         }
@@ -29,9 +29,9 @@ public class Graph {
     public void print() {
         StringBuilder s = new StringBuilder();
         for (String data : this.vertices.keySet()) {
-            s.append("\n" + data +" ---> ");
+            s.append("\n" + data + " ---> ");
             for (Edge edge : vertices.get(data)) {
-                s.append("(" + data +", "+ edge.end +", "+ edge.wight +") ");
+                s.append("(" + data + ", " + edge.end + ", " + edge.wight + ") ");
             }
         }
         System.out.print(s.toString());
